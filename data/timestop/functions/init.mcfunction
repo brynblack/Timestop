@@ -14,3 +14,6 @@ scoreboard objectives add noscore dummy
 scoreboard objectives add doihaveascore dummy
 scoreboard objectives add hasItemFreeze dummy
 scoreboard objectives add hasItemUnfreeze dummy
+scoreboard objectives add fuse dummy
+scoreboard objectives add tntfuse dummy
+scoreboard objectives add life dummy

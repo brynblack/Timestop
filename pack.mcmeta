@@ -1,6 +1,6 @@
  {
        "pack": {
-           "pack_format": 3,
-           "description": "Useful Commands"
+           "pack_format": 5,
+           "description": "Timefreeze - A datapack to freeze time"
        }
    }

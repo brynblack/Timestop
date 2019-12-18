@@ -4,8 +4,8 @@ execute as @e[type=!player,sort=arbitrary] if score @s noscore matches 0 run sco
 execute as @e[type=!player,sort=arbitrary] if score @s noscore matches 0 run scoreboard players set @s doihaveascore 1
 
 # Check if player uses items
-execute as @e[type=!player,name=!Unfreeze,sort=arbitrary] if entity @e[name=Unfreeze,sort=arbitrary] run scoreboard players set @s freeze 2
 execute as @e[type=!player,name=!Freeze,sort=arbitrary] if entity @e[name=Freeze,sort=arbitrary] run scoreboard players set @s freeze 1
+execute as @e[type=!player,name=!Unfreeze,sort=arbitrary] if entity @e[name=Unfreeze,sort=arbitrary] run scoreboard players set @s freeze 2
 execute as @e[name=Freeze,sort=arbitrary] run kill @s
 execute as @e[name=Unfreeze,sort=arbitrary] run kill @s
 
@@ -18,9 +18,6 @@ execute as @a[sort=arbitrary] if score @s hasItemUnfreeze matches 0 run clear @s
 execute as @a[sort=arbitrary] if score @s hasItemUnfreeze matches 0 run give @s minecraft:endermite_spawn_egg{display:{Name:"\"Unfreeze\""}}
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:"\"Freeze\""}}}},sort=arbitrary] run kill @s
 execute as @e[type=item,nbt={Item:{tag:{display:{Name:"\"Unfreeze\""}}}},sort=arbitrary] run kill @s
-
-# Spawn particles when time freezes
-execute at @a[sort=arbitrary] as @e[type=!player,sort=arbitrary,limit=1] if score @s freeze matches 1 run particle minecraft:portal ~ ~ ~ -16 -5 -32 1 200 force
 
 # Check if player in rideable entity 
 execute as @e[type=!player,sort=arbitrary] if score @s freeze matches 1 as @a[nbt={RootVehicle:{Entity:{id:"minecraft:horse"}}}] at @s run tp @s ~ ~1 ~

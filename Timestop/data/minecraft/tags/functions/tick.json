@@ -1,0 +1,10 @@
+{
+
+ "values":[
+ "timestop:stats",
+ "timestop:check",
+ "timestop:freeze",
+ "timestop:unfreeze"
+ ]
+
+} 

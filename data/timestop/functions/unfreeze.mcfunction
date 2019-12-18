@@ -1,3 +1,4 @@
+# Get scoreboard values for all entites excluding players and apply to all entites which were frozen
 execute as @e[type=!player,sort=arbitrary] if score @s freeze matches 2 store result entity @s Motion[0] double 0.01 run scoreboard players get @s x_motion
 execute as @e[type=!player,sort=arbitrary] if score @s freeze matches 2 store result entity @s Motion[1] double 0.01 run scoreboard players get @s y_motion
 execute as @e[type=!player,sort=arbitrary] if score @s freeze matches 2 store result entity @s Motion[2] double 0.01 run scoreboard players get @s z_motion

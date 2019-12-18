@@ -1,7 +1,8 @@
 {
 
  "values":[
- "timestop:init"
+ "timestop:initialisation",
+ "timestop:install"
  ]
 
 } 

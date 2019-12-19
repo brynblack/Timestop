@@ -1,4 +1,5 @@
 # Timestop
-A Minecraft Datapack used to stop time.
-
 Timestop is a datapack made for just specifically, stopping time and motion, and experimenting with physics using frozen entities and projectiles. No extra functions, or models. Just the main components. Thanks to this, the datapack is incredibly tiny, a little bit over 100kb, perfect for computers that struggle regarding performance. It is also heavily optimised, using a combination of small functions, arbitrary sorting, and clean code, so don't be afraid to use if you have a slow device.
+
+# How to install
+Installing datapacks has never been easier. All you do is download the latest release (download the source code as this is sufficient) as a zip file, and extract the contents to your world's datapack folder. An example of the folder structure for windows on where to extract the file to: C:\Users\[USERNAME]\AppData\Roaming\.minecraft\saves\[WORLDNAME]\datapacks\[Extract the datapack here]. A simple way to get to your .minecraft folder is to open run by pressing WINDOWS+r, which will open run, or just search it up in windows search. Then, type %appdata%, and press enter. This will take you to the Roaming folder of AppData, a lot faster than navigating manually. Then, navigate into your .minecraft folder, your saves folder, your world's folder (should have same name as your world), and finally, datapacks. Extract the zip there, and you're all set! Next time you boot up your world, it should automatically install; but if not, type in chat /reload (this will reload all datapacks).

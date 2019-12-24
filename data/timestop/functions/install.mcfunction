@@ -16,6 +16,6 @@ scoreboard objectives add z_motion dummy
 scoreboard players set @a[ sort = arbitrary ] freeze 0
 
 # Information
-tellraw @a[ sort = arbitrary ] [ "", { "text" : "Timestop v2.1.0-beta - 1.15x | Please read the wiki for further information.", "color" : "dark_purple" }, { "text" : "\n" } ]
+tellraw @a[ sort = arbitrary ] [ "", { "text" : "Timestop v2.1.1-beta - 1.15x | Please read the wiki for further information.", "color" : "dark_purple" }, { "text" : "\n" } ]
 tellraw @a[ sort = arbitrary ] [ "", { "text" : "-----------------------------------------------------", "strikethrough" : true, "color" : "gold" }, { "text" : "\n" } ]
 tellraw @a[ sort = arbitrary ] [ "", { "text" : "The pack version is currently v2.1.1-beta. Please remember to post bugs onto my issue tracker if you find any.", "color" : "red" } ]

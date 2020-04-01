@@ -9,4 +9,4 @@ execute as @e[ type = firework_rocket, sort = arbitrary ] store result score @s 
 execute as @e[ type = firework_rocket, sort = arbitrary ] store result score @s y_pos run data get entity @s Pos[1] 100
 execute as @e[ type = tnt, sort = arbitrary ] store result score @s fuse run data get entity @s Fuse 100
 execute as @e[ type = tnt_minecart, sort = arbitrary ] store result score @s tntfuse run data get entity @s TNTFuse 100
-execute as @e[ type = !player, sort = arbitrary ] run tag @s add inworld
+execute as @e[ type = !player, tag = !inworld, sort = arbitrary ] run tag @s add inworld
